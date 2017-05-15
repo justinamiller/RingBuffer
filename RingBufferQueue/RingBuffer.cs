@@ -13,7 +13,6 @@ namespace RingBufferQueue
     {
         private Action<T[]> m_onfull;
         private AutoResetEvent m_autoEvent = new AutoResetEvent(false);
-        private readonly object r_bufferGate = new object();
         private T[] m_queueData;
         private int m_first;
         private int m_last;
